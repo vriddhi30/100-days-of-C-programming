@@ -1,0 +1,10 @@
+#include <stdio.h>
+enum Days {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};
+int main() {
+    enum Days d;
+    char *names[] = {"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"};
+    for (d = SUNDAY; d <= SATURDAY; d++) {
+        printf("%s = %d\n", names[d], d);
+    }
+    return 0;
+}
